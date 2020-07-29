@@ -1,0 +1,255 @@
+/* global */
+:root{
+    --details:#ffcc02;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3{
+    text-transform: uppercase;
+}
+
+h2{
+    font-weight: 400;
+    letter-spacing: .5rem;
+}
+
+h3{
+    font-size: rem;
+    font-weight: 300;
+}
+img{
+    max-width: 100%;
+}
+/* utilities */
+
+
+
+/* information section */
+section.information{
+    background-color: black;
+    color: white;
+}
+
+.title{
+    padding-left: 1rem;
+    text-align: center;
+}
+
+section.information h2{
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    border-left: 1px solid var(--details);
+}
+
+@media(min-width: 768px){
+    section.information h2{
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
+
+.info-text{
+    padding: 0 1rem;
+}
+
+.info img{
+    height: 250px;
+    width: 400px;
+}
+
+.info h3{
+    width: 5rem;
+    text-align:center;
+    border-left: 1px solid #8a8a8a;
+    border-right: 1px solid #8a8a8a;
+    letter-spacing: .3rem;
+    padding-left: .5rem;
+    padding-right: 1rem;
+
+}
+
+.grid-three{
+    display:grid;
+}
+
+@media(min-width: 768px){
+    .grid-three{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+
+.info-text p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.info-text p:hover{
+    color: #8a8a8a;
+}
+
+/* history section */
+
+.history-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.history-text{
+    padding: 1rem 7rem 4rem 7rem;
+    height: 70%;
+    background-image: url(/img/crocodile.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem 7rem 4rem 7rem;
+    height:50vh;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.history-text p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 1rem;
+
+}
+
+.history-text h3{
+    width: 7rem;
+    color: white;
+    text-align: center;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding-left: .5rem;
+    padding-left: .5rem;
+    letter-spacing: .3rem;
+}
+
+.history-section h2{
+    color:#dedede;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* footer */
+
+footer.footer-site{
+    background-color: lightgrey;
+    height: 20vh;
+    margin: 8rem;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+div.footer-more-info{
+    border-left: 1px solid black;
+    margin-left: 3rem;
+    padding-left: 1rem;
+    height: 8rem;
+    margin-top: 2rem;
+}
+
+div.footer-more-info h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 3rem;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+
+div.footer-more-info input[type="submit"]{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+}
+div.footer-more-info input[type="email"]{
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+    color: lightgrey;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+}
+
+@media(min-width: 768px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    
+    }
+}
+
+
+
+/* add hover for newsletter button */
+
+div.footer-more-info input[type="submit"]:hover{
+    color: black;
+    background-color: grey;
+}
+
+/* Follow */
+
+.social-networks{
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.social-networks h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.icons{
+    padding-right: 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.icons a{
+    color: black;
+    border-radius: 5px;
+}
+
+.icons a:hover{
+    color: white;
+    background-color: black;
+    font-size: 3rem;
+}
+
